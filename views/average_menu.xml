@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    
+    <menuitem name="Average" id="average_menu_root" action="action_average" />
+    
+
+</odoo>

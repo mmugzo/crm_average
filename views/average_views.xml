@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="average_tree_view" model="ir.ui.view">
+            <field name="name">lead.quality.tree</field>
+            <field name="model">lead.quality</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="eos_life" />
+                    <field name="trust" />
+                    <field name="location" />
+                    <field name="inventory" />
+                    <field name="monthly_income" />
+                    <field name="long_term_income" />
+                    <field name="scoring_avg" />
+                </tree>
+            </field>
+        </record>
+        <record id="average_form_view" model="ir.ui.view">
+            <field name="name">lead.quality.form</field>
+            <field name="model">lead.quality</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="eos_life" widget="priority" />
+                            <field name="trust" widget="priority" />
+                            <field name="location" widget="priority" />
+                            <field name="inventory" widget="priority" />
+                            <field name="monthly_income" widget="priority" />
+                            <field name="long_term_income" widget="priority" />
+                            <field name="scoring_avg" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_average" model="ir.actions.act_window">
+            <field name="name">Average</field>
+            <field name="res_model">lead.quality</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="average_tree_view"/> 
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a property to advertise</p>
+            </field>
+        </record>
+    </data>
+</odoo>
