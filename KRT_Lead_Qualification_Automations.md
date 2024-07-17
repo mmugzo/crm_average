@@ -1,7 +1,7 @@
 ## KRT Lead Qualification Automation
 
 ### 1. Lead Meets Qualification Criteria
-`If Lead meets criteris is true then on work completion`
+`If Lead meets criteria is true then on work completion`
 * Set lead_qualified_by to current user
 * Set lead_qualified_date to current date(today)
 * Change lead Tag from Lead/Dealer/New to Lead/Dealer/Qualified
